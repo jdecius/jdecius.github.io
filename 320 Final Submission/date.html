@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Date </title>
+        <metacharset="utf-8">
+        <style type = "text/css">
+            body{
+                background-image: url(308680.jpg);
+                color: blue;
+                font-size: 600% ;
+                text-shadow: 5px 5px red;
+                text-align: center;
+            }
+        </style>
+        <link href="styles.css" rel="stylesheet">
+        
+
+    </head>
+    
+    <body>
+        
+        <p id="date"></p>
+        <script>
+            var date = new Date();
+            var m = date.getMonth();
+            var d = date.getDate();
+            
+            var months = new Array ("January","February", "March","April","May","June","July","August","September","October","November","December");
+
+           document.writeln("<p> Today is " + months[m] + " " + d + "</p>");
+
+           var start = new Date();
+           var end = new Date("July 4, 2021");
+           var diff;
+           var days = 1000 * 60 *60 * 24; 
+
+           diff = end - start ;
+           var fourth = (Math.floor(diff/days)) + 1;
+
+           document.writeln("<p> Only " + fourth + " days until Fourth of July </p>");
+        </script>
+       
+    </body>
+</html>

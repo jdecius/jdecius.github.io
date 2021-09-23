@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Coin Toss Game </title>
+        <meta charset="utf-8">
+        <style type = "text/css">
+        
+        body{
+            background-image: url(coin.png);
+            text-align: center;
+            color: white;
+            font-size: 400%;
+
+        }
+        
+        </style>
+        <link href="styles.css" rel="stylesheet">
+        
+        <script>
+
+            var n = Math.floor( 1 + Math.random() * 2);
+            if (n == 1){
+                document.writeln("Heads! ");
+            }
+            else{
+                document.writeln("Tails! ");
+            }
+
+
+        </script>
+    </head>
+    <body></body>
+</html>
